@@ -13,5 +13,5 @@ Steps to see solution:
   ![find_queen](https://github.com/akshay-rvce/FEproblem/blob/master/screenshots/find_queen.png)
 5.If you find the queen you will get this output
   ![result_success](https://github.com/akshay-rvce/FEproblem/blob/master/screenshots/result_success.png)
-6.If you failed ot get queen , you will get this result
+6.If you failed to get queen , you will get this result
   ![result_failure](https://github.com/akshay-rvce/FEproblem/blob/master/screenshots/result_failure.png)
