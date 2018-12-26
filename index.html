@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="makeup.css">
+
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+  <script src="game_manager.js"></script>
+
+
+
+
+</head>
+<body>
+
+  <div class="header">
+    <span font-size="24px">Find Falcone!</span>
+    <div class="header-right">
+      <a class="active" href="https://geektrust.in">GeekTrust Home</a>
+      <a href="index.html">Reset</a>
+    </div>
+  </div>
+
+
+
+
+<!--start of container-->
+  <div class="container">
+
+
+
+
+
+    <!--row 1-->
+    <div class="row">
+
+
+        <div class="col-sm-4">
+          <div class="checkbox">
+            <label class="planet-name"><input type="checkbox" name="planet" class="single-checkbox"></label>
+          </div>
+
+        </div>
+        <div class="col-sm-4">
+          <div class="checkbox">
+          </div>
+          <label class="planet-name"><input type="checkbox" name="planet" class="single-checkbox"></label>
+
+        </div>
+        <div class="col-sm-4">
+          <div class="checkbox">
+            <label class="planet-name"><input type="checkbox" name="planet" class="single-checkbox"></label>
+          </div>
+
+        </div>
+      <!--row 1 end-->
+      </div>
+
+
+      <!--row 2-->
+      <div class="row">
+
+
+          <div class="col-sm-4">
+            <div class="checkbox">
+              <label class="planet-name"><input type="checkbox" name="planet" class="single-checkbox"></label>
+            </div>
+
+          </div>
+          <div class="col-sm-4">
+            <div class="checkbox">
+              <label class="planet-name"><input type="checkbox" name="planet" class="single-checkbox"></label>
+            </div>
+
+          </div>
+          <div class="col-sm-4">
+            <div class="checkbox">
+              <label class="planet-name"><input type="checkbox" name="planet" class="single-checkbox"></label>
+            </div>
+
+          </div>
+        <!--row 2 end-->
+        </div>
+
+
+            <button id="find-queen"  class="btn btn-primary col-sm-offset-4 col-md-2">Find Queen!</button>
+
+
+
+
+<!-- Trigger the modal with a button, remove style to display button -->
+
+<button type="button" id="modal-button" style='display: none;' class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <h4 class="modal-title">Select vehicles</h4>
+      </div>
+      <div class="modal-body">
+
+
+      </div>
+      <div class="modal-footer">
+         <button type="button" style='display: none;' id='modal-close' class="btn btn-default" data-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!--end of container-->
+      </div>
+      <div class="footer">
+        <p>Coding Problem: https://www.geektrust.in/api/pdf/open/UIPS1 </p>
+      </div>
+
+
+</body>
+</html>

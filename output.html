@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="makeup.css">
+
+
+
+  <style>
+      #result
+      {
+        border: 2px;
+        border-color: white;
+        color:white;
+        margin-top:20%;
+        align-self: center;
+      }
+  </style>
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+  <script>
+  $(document).ready(function(){
+
+
+     if ($.cookie('time_taken') == null ){
+
+         window.location.href = "index.html";
+     }
+
+    //on load check cookies and display in banner
+     console.log($.cookie("time_taken"));
+
+
+    if( $.cookie("time_taken")>0)
+    {
+      $("#result").html("<h1>Royal dinner by King Shan!</h1><h2> We found falcone at "+$.cookie("planet_name")+" planet in "+ $.cookie("time_taken")+" hours<h2>");
+    }
+    //else falcone not found
+    else
+    {
+            $("#result").html("<h1>Snap! we missed her. Try again!</h1>");
+    }
+
+
+
+  });
+
+  </script>
+
+
+
+
+</head>
+<body>
+
+  <div class="header">
+    <span font-size="24px">Find Falcone!</span>
+    <div class="header-right">
+      <a class="active" href="https://geektrust.in">GeekTrust Home</a>
+      
+    </div>
+  </div>
+
+
+
+<!--start of container-->
+  <div class="container">
+
+  <div class="row">
+      <div class="col-sm-offset-2 col-md-8" id="result">
+
+      </div>
+
+  </div>
+<!--end of container-->
+  </div>
+<a href="index.html" class="col-sm-offset-4 col-md-2 btn btn-primary">Play once again!</a>
+
+
+
+<div class="footer">
+  <p>Coding Problem: https://www.geektrust.in/api/pdf/open/UIPS1 </p>
+</div>
+
+</body>
+</html>
